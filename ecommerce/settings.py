@@ -1,6 +1,7 @@
 
 from logging import config
 import os
+from decouple import config # type: ignore
 
 from pathlib import Path
 

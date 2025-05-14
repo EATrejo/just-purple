@@ -1,8 +1,7 @@
 
 from logging import config
 import os
-from decouple import config # type: ignore
-
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -174,70 +173,12 @@ EMAIL_USE_TLS = 'True'
 
 # Be sure to read the guide in the resources folder of this lecture (SETUP THE EMAIL BACKEND)
 
-EMAIL_HOST_USER = '' # - Enter your GMAIL address # The host email that sends password reset emails
-EMAIL_HOST_PASSWORD = '' # - Enter your app password 
+#EMAIL_HOST_USER = '' # - Enter your GMAIL address # The host email that sends password reset emails
+#EMAIL_HOST_PASSWORD = '' # - Enter your app password 
 
 
 
 
-# AWS configuration
-
-'''
-AWS_ACCESS_KEY_ID = '' # - Enter your AWS ACCESS KEY ID HERE
-AWS_SECRET_ACCESS_KEY = '' # - Enter your AWS SECRET ACCESS KEY HERE
-
-
-# Amazon S3 Integration
-
-AWS_STORAGE_BUCKET_NAME = '' # - Enter your S3 bucket name HERE
-
-# Django 4.2 > Storage configuration for S3
-
-STORAGES = {
-    
-    # Media file (image) management
-
-    "default": {
-        "BACKEND": "storages.backends.s3boto3.S3StaticStorage",
-    },
-    
-    # CSS and JS file management
-
-    "staticfiles": {
-        "BACKEND": "storages.backends.s3boto3.S3StaticStorage",
-        
-    },
-    
-}
-
-
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-
-AWS_S3_FILE_OVERWRITE = False
-
-'''
-
-
-'''
-# RDS (Database) configuration settings:
-DATABASES = {
-
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql',
-
-        'NAME': '', # Enter your Database name HERE
-
-        'USER': '', # Enter your Database username HERE
-
-        'PASSWORD': '', # Enter your Database password HERE
-
-        'HOST': '', # Enter your Database host/endpoint HERE
-
-        'PORT': '5432',
-    }
-}
-'''
 
 
 
